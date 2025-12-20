@@ -1,6 +1,12 @@
 from azure.search.documents import SearchClient
 from azure.core.credentials import AzureKeyCredential
 import os
+from pathlib import Path
+from dotenv import load_dotenv
+
+# Force-load .env from project root
+env_path = Path(__file__).resolve().parent.parent / ".env"
+load_dotenv(dotenv_path=env_path)
 
 search_client = SearchClient(
     endpoint=os.getenv("AZURE_SEARCH_ENDPOINT"),

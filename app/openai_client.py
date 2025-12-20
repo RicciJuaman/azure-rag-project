@@ -1,5 +1,12 @@
 from openai import AzureOpenAI
 import os
+from pathlib import Path
+from dotenv import load_dotenv
+
+# Force-load .env from project root
+env_path = Path(__file__).resolve().parent.parent / ".env"
+load_dotenv(dotenv_path=env_path)
+
 
 client = AzureOpenAI(
     api_key=os.getenv("AZURE_OPENAI_API_KEY"),
