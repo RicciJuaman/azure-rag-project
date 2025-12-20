@@ -1,1 +1,84 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+
+# Virtual environments
 .env
+.venv
+venv/
+ENV/
+env/
+.env.local
+
+# Python tooling
+pip-wheel-metadata/
+dist/
+build/
+
+# =========================
+# Environment & Secrets
+# =========================
+.env
+*.env
+.env.*
+secrets.*
+*.key
+
+# =========================
+# Logs & runtime files
+# =========================
+*.log
+logs/
+*.pid
+
+# =========================
+# FastAPI / Uvicorn
+# =========================
+uvicorn.log
+
+# =========================
+# OS / Editor
+# =========================
+.DS_Store
+Thumbs.db
+
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+
+.idea/
+*.swp
+*.swo
+
+# =========================
+# Jupyter (optional)
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Testing / Coverage
+# =========================
+.pytest_cache/
+.coverage
+htmlcov/
+
+# =========================
+# Azure / Cloud
+# =========================
+.azure/
+*.azure
+.local.settings.json
+
+# =========================
+# Cache / temp
+# =========================
+.cache/
+.tmp/
+temp/
